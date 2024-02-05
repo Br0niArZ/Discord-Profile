@@ -17,12 +17,11 @@ class DiscordApi
     {
         $this->userId = $this->getJson('userId');
 
-        //getting id from GET method
         if (isset($_GET['userId']) && $this->getJson('developmentMode') == true) {
             $this->userId = filter_input(INPUT_GET, 'userId', FILTER_VALIDATE_INT);
         }
 
-        $url = "http://localhost:6969/api/discord/?id=" . $this->userId;
+        $url = "http://130.61.35.110:6969/api/discord/?id=" . $this->userId;
 
         $this->ch = curl_init($url);
         curl_setopt($this->ch, CURLOPT_RETURNTRANSFER, true);
