@@ -2,7 +2,7 @@
 <p align="center">Discord profile with automated data retrieval via official API</p>
 
 ## Screenshots
-<img src="" alt="Discord Profile screenshot"/>
+<img src="https://raw.githubusercontent.com/Br0niArZ/Discord-Profile/master/src/assets/media/github/discord-profile.gif?token=GHSAT0AAAAAACM6N6IZSFOA6MYNTPQ4J6EAZOBJDNA" width="485" height="540" alt="Discord Profile screenshot"/>
 
 ## Table of Contents
 - [How to start](#how-to-start)
