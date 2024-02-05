@@ -30,7 +30,7 @@ class DiscordApi
 
     public function getJson($field)
     {
-        $data = json_decode(file_get_contents("config.json"), true);
+        $data = json_decode(file_get_contents("../config.json"), true);
 
         return $data[$field];
     }
