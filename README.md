@@ -16,7 +16,7 @@
 NOTE: At the outset, I would like to emphasize that the following instructions are not a "3 easy steps" type of guide. To achieve success, one must also engage their brain.
 
 1. **Download:** Download the repository from the [official source](https://github.com/Br0niArZ/Discord-Profile/releases).
-2. **Configuration:** Configure the configuration file located in ``src/config.json``.
+2. **Configuration:** Configure the configuration file located in ``config.json``.
 3. **Hosting:** Host the website on web servers such as nginx/apache2.
 4. **Join our Discord server:** [discord.gg/7E52CFKaET](https://discord.gg/7E52CFKaET)
 5. **Voila!** This way, you have launched a Discord profile on your website that is updated in real-time!
