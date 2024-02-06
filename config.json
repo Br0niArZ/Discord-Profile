@@ -12,83 +12,83 @@
 
   "__comment04": "enter the name AND link to the account here (if you don't want an account, do not remove it from the config)",
   "accounts": {
-    "paypal": {
+    "PayPal": {
       "username": "test",
       "link": "https://localhost.lan/"
     },
-    "reddit": {
+    "Reddit": {
       "username": "test",
       "link": "https://localhost.lan/"
     },
-    "tiktok": {
+    "TikTok": {
       "username": "",
       "link": ""
     },
-    "x": {
+    "X": {
       "username": "",
       "link": ""
     },
-    "ebay": {
+    "eBay": {
       "username": "",
       "link": ""
     },
-    "crunchyroll": {
+    "Crunchyroll": {
       "username": "",
       "link": ""
     },
-    "playstation": {
+    "PlayStation": {
       "username": "test",
       "link": "https://localhost.lan/"
     },
-    "xbox": {
+    "Xbox": {
       "username": "",
       "link": ""
     },
-    "battlenet": {
+    "BattleNet": {
       "username": "",
       "link": ""
     },
-    "epicgames": {
+    "EpicGames": {
       "username": "",
       "link": ""
     },
-    "facebook": {
+    "Facebook": {
       "username": "",
       "link": ""
     },
-    "instagram": {
+    "Instagram": {
       "username": "",
       "link": ""
     },
-    "steam": {
+    "Steam": {
       "username": "",
       "link": ""
     },
-    "spotify": {
+    "Spotify": {
       "username": "",
       "link": ""
     },
-    "domain": {
+    "Domain": {
       "username": "",
       "link": ""
     },
-    "github": {
+    "GitHub": {
       "username": "",
       "link": ""
     },
-    "leagueoflegends": {
+    "LeagueOfLegends": {
       "username": "",
       "link": ""
     },
-    "riotgames": {
+    "RiotGames": {
       "username": "",
       "link": ""
     },
-    "twitch": {
+    "Twitch": {
       "username": "",
       "link": ""
     },
-    "youtube": {
+    "YouTube": {
       "username": "",
       "link": ""
     }
