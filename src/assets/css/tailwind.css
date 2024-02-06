@@ -27,3 +27,7 @@
   > .tippy-arrow::before {
   @apply border-t-discord-300;
 }
+.tippy-box[data-theme~="discord"][data-placement^="bottom"]
+  > .tippy-arrow::before {
+  @apply border-b-discord-300;
+}

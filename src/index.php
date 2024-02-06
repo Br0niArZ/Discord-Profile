@@ -24,10 +24,10 @@ $DiscordApi = new DiscordApi();
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/media/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/media/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/media/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./assets/media/favicons/site.webmanifest">
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/font/gg sans/stylesheet.css">
@@ -53,11 +53,16 @@ $DiscordApi = new DiscordApi();
                 <a class="ml-1 mr-3 text-[#8ab4f8] hover:underline hover:text-blue-400" href="?userId=497798316629950464">Br0niArZ-_-</a>
             </div>
             <form class="inline-block" method="get">
-                <div class="inline-block text-nowrap mt-1">Try on you: <input name="userId" type="text" placeholder="Your user ID" class="bg-[#eee] rounded ml-1 text-black px-1 border border-gray-300 outline-none  focus:border-gray-400"></div>
+                <div class="inline-block text-nowrap mt-1">Try on you: <input name="userId" type="text" placeholder="Your user ID" class="bg-[#eee] rounded ml-1 text-black px-1 border border-gray-300 outline-none  focus:border-gray-400">
+                    <svg data-tippy-content="You must be on our Discord!" class="outline-none inline-block w-7 mb-1 p-2 fill-slate-50 hover:fill-slate-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path class="" d="M80 160c0-35.3 28.7-64 64-64h32c35.3 0 64 28.7 64 64v3.6c0 21.8-11.1 42.1-29.4 53.8l-42.2 27.1c-25.2 16.2-40.4 44.1-40.4 74V320c0 17.7 14.3 32 32 32s32-14.3 32-32v-1.4c0-8.2 4.2-15.8 11-20.2l42.2-27.1c36.6-23.6 58.8-64.1 58.8-107.7V160c0-70.7-57.3-128-128-128H144C73.3 32 16 89.3 16 160c0 17.7 14.3 32 32 32s32-14.3 32-32zm80 320a40 40 0 1 0 0-80 40 40 0 1 0 0 80z" />
+                    </svg>
+                </div>
+
             </form>
         </div>
         <div class="pb-24">
-            <div id="user-profile-card" class=" bg-discord-200   rounded-lg font-ggsans flex flex-col max-w-[600px] ">
+            <div id="user-profile-card" class="select-none bg-discord-200   rounded-lg font-ggsans flex flex-col max-w-[600px] ">
                 <header class="sm:mb-[60px] mb-10  sm:min-w-[600px]  w-80  ">
                     <div id="user-banner" class=" min-h-14 sm:min-h-28 rounded-t-lg bg-center bg-cover bg-no-repeat" <?php echo strlen($DiscordApi->banner()) <= 7 ? 'style="background-color: ' . $DiscordApi->banner() . '"' : null; ?>>
                         <?php
@@ -84,10 +89,6 @@ $DiscordApi = new DiscordApi();
                                                                                                                                                     echo '"' . $statuses[$DiscordApi->clientStatus()] . '"';
                                                                                                                                                     ?> class="absolute left-[45px] top-[50px] sm:left-[78px] sm:top-[84px] scale-75 sm:scale-100">
                             </div>
-
-
-
-
                             <div class="hidden absolute z-50  break-words rounded-lg bg-discord-300 py-1.5 px-3 font-sans text-sm font-normal text-white after:content-[''] after:absolute after:ml-[-5px] after:border-[5px] after:border-solid after:border-[black_transparent_transparent_transparent] after:left-2/4 after:top-full">
 
                             </div>
@@ -219,7 +220,7 @@ $DiscordApi = new DiscordApi();
 
             </div>
         </div>
-        <footer class=" w-full  text-center text-discord-300 p-2 <?php if ($DiscordApi->getJson("developmentMode") == false) echo 'hidden' ?>">
+        <footer class=" w-full  text-center text-discord-300 p-2 <?php if ($DiscordApi->getJson("developmentMode") == false) echo 'invisible' ?>">
             This page is not an official Discord website. The project is neither affiliated with nor endorsed by Discord Inc. Data is retrieved from Discord's public API, and there is no guarantee that it complies with official Discord standards. All trademarks belong to their respective owners.
         </footer>
     </div>

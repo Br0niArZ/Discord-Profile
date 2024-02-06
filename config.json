@@ -1,5 +1,5 @@
 {
-  "developmentMode": false,
+  "developmentMode": true,
 
   "__comment01": "enter the user id whose information is to be retrieved for the page here",
   "userId": "443456076244058142",
@@ -14,11 +14,11 @@
   "accounts": {
     "paypal": {
       "username": "test",
-      "link": "https://localhost.pl/"
+      "link": "https://localhost.lan/"
     },
     "reddit": {
       "username": "test",
-      "link": "https://localhost.pl/"
+      "link": "https://localhost.lan/"
     },
     "tiktok": {
       "username": "",
@@ -38,7 +38,7 @@
     },
     "playstation": {
       "username": "test",
-      "link": "https://localhost.pl/"
+      "link": "https://localhost.lan/"
     },
     "xbox": {
       "username": "",

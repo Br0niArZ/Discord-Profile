@@ -1051,6 +1051,10 @@ video {
   width: 16rem;
 }
 
+.w-7 {
+  width: 1.75rem;
+}
+
 .w-72 {
   width: 18rem;
 }
@@ -1569,6 +1573,10 @@ video {
   fill: #000;
 }
 
+.fill-slate-50 {
+  fill: #f8fafc;
+}
+
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -1978,6 +1986,12 @@ video {
   border-top-color: rgb(17 18 20 / var(--tw-border-opacity));
 }
 
+.tippy-box[data-theme~="discord"][data-placement^="bottom"]
+  > .tippy-arrow::before {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(17 18 20 / var(--tw-border-opacity));
+}
+
 .placeholder\:font-light::-moz-placeholder {
   font-weight: 300;
 }
@@ -2063,6 +2077,10 @@ video {
 
 .hover\:to-\[\#ccc\]:hover {
   --tw-gradient-to: #ccc var(--tw-gradient-to-position);
+}
+
+.hover\:fill-slate-300:hover {
+  fill: #cbd5e1;
 }
 
 .hover\:text-blue-400:hover {
