@@ -1,5 +1,8 @@
 # <p align="center">Discord Profile</p>
 <p align="center">Discord profile with automated data retrieval via official API</p>
+<p align="center">
+  <a href="https://discord-profile.fixed.ovh">DEMO website</a>
+</p>
 
 ## Preview
 <img src="https://i.imgur.com/mon6wjt.gif" width="485" height="540" alt="Discord Profile screenshot"/>
