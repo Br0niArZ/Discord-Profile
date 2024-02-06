@@ -237,7 +237,7 @@ class DiscordApi
                 $output .= <<<EOL
                 <div class="py-3 sm:px-2 px-1 text-base text-white border-[1px] border-discord-200 rounded-[4px] max-w-[125px] sm:max-w-[265px]">
                     <div class="flex items-center sm:gap-2 gap-1">
-                        <img src="assets/media/accounts/$accountName.svg" class="user-service-icon w-6 float-left mr-1">
+                        <img src="assets/media/accounts/$accountName.svg" class="user-service-icon w-6 float-left mr-1" data-tippy-content="$accountName">
                         <div class="flex items-center grow">
                             <div class="flex items-center flex-1 ">
                                 <div class="user-service-name sm:text-base text-xs">
