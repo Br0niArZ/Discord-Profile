@@ -1,7 +1,7 @@
 # <p align="center">Discord Profile</p>
 <p align="center">Discord profile with automated data retrieval via official API</p>
 <p align="center">
-  <a href="https://discord-profile.fixed.ovh">DEMO website</a>
+  <a href="https://discord-profile.fixed.ovh" target="_blank">DEMO website</a>
 </p>
 
 ## Preview
