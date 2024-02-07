@@ -15,7 +15,7 @@ $DiscordApi = new DiscordApi();
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="Discord profile with automated data retrieval via official API">
     <meta name="keywords" content="discord-profile">
     <meta name="author" content="fiXed & Br0niArZ">
     <meta name="copyright" content="(c) 2024 Br0niArZ">
