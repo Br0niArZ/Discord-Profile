@@ -72,10 +72,11 @@ $(document).ready(function () {
 // user activity loading with AJAX requests
 function updateActivities() {
   const urlParams = new URLSearchParams(window.location.search);
-  const userId = urlParams.get("userId");
+  const userId = urlParams.get("userId") != null ? urlParams.get("userId") : "";
+
   console.log(userId);
   $.ajax({
-    url: "reload.php?userId=" + userId != null ? userId : "",
+    url: "reload.php?userId=" + userId,
     method: "GET",
     success: function (data) {
       $("#user-activities").html(data);
