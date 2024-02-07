@@ -75,7 +75,7 @@ function updateActivities() {
   const userId = urlParams.get("userId");
   console.log(userId);
   $.ajax({
-    url: "reload.php?userId=" + userId,
+    url: "reload.php?userId=" + userId != null ? userId : "",
     method: "GET",
     success: function (data) {
       $("#user-activities").html(data);
