@@ -17,6 +17,7 @@ class DiscordApi
     {
         $this->userId = $this->getJson('userId');
 
+
         if (isset($_GET['userId']) && $this->getJson('developmentMode')) {
             $userId = filter_input(INPUT_GET, 'userId', FILTER_VALIDATE_INT);
             if ($userId !== false) {
@@ -24,7 +25,8 @@ class DiscordApi
             }
         }
 
-        $url = "https://api.fixed.ovh/api/discord/?id=" . $this->userId;
+
+        $url = "https://api.fixed.ovh/api/discord?id=" . $this->userId;
 
         $this->ch = curl_init($url);
         curl_setopt($this->ch, CURLOPT_RETURNTRANSFER, true);
