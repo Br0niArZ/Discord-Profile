@@ -86,6 +86,8 @@ function updateActivities() {
       updateTimers();
       tippy("[data-tippy-content]", {
         theme: "discord",
+        allowHTML: true,
+        interactive: true,
       });
       document.querySelectorAll("img").forEach(function (img) {
         img.onerror = function () {
