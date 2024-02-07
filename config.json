@@ -8,7 +8,7 @@
   "pronous": "he/him",
 
   "__comment03": "every new quotation mark is a new line in the bio",
-  "bio": ["｡ﾟﾟ･ ｡ ･ﾟﾟ ｡", "ﾟ。 https://fixed.ovh/", "　ﾟ･ ｡･"],
+  "bio": ["About me section is loaded by config"],
 
   "__comment04": "enter the name AND link to the account here (if you don't want an account, do not remove it from the config)",
   "accounts": {
