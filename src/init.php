@@ -245,7 +245,7 @@ class DiscordApi
                                     {$account["username"]}
                                 </div>
                             </div>
-                            <a class="user-linked-account-OpenIco  rotate-45" href="$link">
+                            <a class="user-linked-account-OpenIco  rotate-45" target="_blank" href="$link">
                                 <svg class="text-gray-400 hover:text-gray-200 " aria-hidden="true" role="img" width="24" height="24" viewBox="0 0 24 24">
                                     <polygon fill="currentColor" fill-rule="nonzero" points="13 20 11 20 11 8 5.5 13.5 4.08 12.08 12 4.16 19.92 12.08 18.5 13.5 13 8">
                                     </polygon>
