@@ -220,7 +220,7 @@ $DiscordApi = new DiscordApi();
 
             </div>
         </div>
-        <footer class=" w-full  text-center text-discord-300 p-2 <?php if ($DiscordApi->getJson("developmentMode") == false) echo 'invisible' ?>"> 
+        <footer class=" w-full  text-center text-discord-300 p-2 <?php if ($DiscordApi->getJson("developmentMode") == false) echo 'invisible' ?>">
             This page is not an official Discord website. The project is neither affiliated with nor endorsed by Discord Inc. Data is retrieved from Discord's public API, and there is no guarantee that it complies with official Discord standards. All trademarks belong to their respective owners.
         </footer>
     </div>
