@@ -116,7 +116,7 @@ class DiscordApi
 
         foreach ($flags as $index => $description) {
             if ($this->getUserResource('basic')['flags'] & (1 << $index)) {
-                $activatedFlags .= '<img src="assets/media/badges/' . $description[0] . '.svg" class="w-[1.25rem] sm:w-6 h-[1.25rem] sm:h-6" data-tippy-content="' . $description[1] . '">';
+                $activatedFlags .= '<img alt="badge" src="assets/media/badges/' . $description[0] . '.svg" class="w-[1.25rem] sm:w-6 h-[1.25rem] sm:h-6" data-tippy-content="' . $description[1] . '">';
             }
         }
 
@@ -126,7 +126,7 @@ class DiscordApi
     public function premiumType()
     {
         if ($this->getUserResource("basic")["premiumType"] == !null) {
-            return '<img src="assets/media/badges/discordnitro.svg" class="w-4 sm:w-6 h-4 sm:h-6" data-tippy-content="Nitro Subscriber">';
+            return '<img alt="badge" src="assets/media/badges/discordnitro.svg" class="w-4 sm:w-6 h-4 sm:h-6" data-tippy-content="Nitro Subscriber">';
         }
     }
 
@@ -160,11 +160,11 @@ class DiscordApi
                 $largeImages[$i] = '<div></div>';
             } else {
                 if (substr($largeImages[$i], 0, 3) == "mp:") {
-                    $largeImages[$i] = '<img class="w-[90px] rounded-lg" src="https://media.discordapp.net/' . str_replace('mp:', '', $largeImages[$i]) . '"' . (!empty($largeTexts[$i]) ? ' data-tippy-content="' . $largeTexts[$i] . '"' : '') . '>';
+                    $largeImages[$i] = '<img alt="activity" class="w-[90px] rounded-lg" src="https://media.discordapp.net/' . str_replace('mp:', '', $largeImages[$i]) . '"' . (!empty($largeTexts[$i]) ? ' data-tippy-content="' . $largeTexts[$i] . '"' : '') . '>';
                 } elseif (substr($largeImages[$i], 0, 8) == "spotify:") {
-                    $largeImages[$i] = '<img class="w-[90px] rounded-lg" src="https://i.scdn.co/image/' . str_replace('spotify:', '', $largeImages[$i]) . '"' . (!empty($largeTexts[$i]) ? ' data-tippy-content="' . $largeTexts[$i] . '"' : '') . '>';
+                    $largeImages[$i] = '<img alt="activity" class="w-[90px] rounded-lg" src="https://i.scdn.co/image/' . str_replace('spotify:', '', $largeImages[$i]) . '"' . (!empty($largeTexts[$i]) ? ' data-tippy-content="' . $largeTexts[$i] . '"' : '') . '>';
                 } else {
-                    $largeImages[$i] = '<img class="w-[90px] rounded-lg" src="https://cdn.discordapp.com/app-assets/383226320970055681/' . $largeImages[$i] . '"' . (!empty($largeTexts[$i]) ? ' data-tippy-content="' . $largeTexts[$i] . '"' : '') . '>';
+                    $largeImages[$i] = '<img alt="activity" class="w-[90px] rounded-lg" src="https://cdn.discordapp.com/app-assets/383226320970055681/' . $largeImages[$i] . '"' . (!empty($largeTexts[$i]) ? ' data-tippy-content="' . $largeTexts[$i] . '"' : '') . '>';
                 }
             }
 
@@ -172,9 +172,9 @@ class DiscordApi
                 $smallImages[$i] = '<div></div>';
             } else {
                 if (substr($smallImages[$i], 0, 3) == "mp:") {
-                    $smallImages[$i] = '<img class="w-[30px]  rounded-full absolute -bottom-1 -right-1" src="https://media.discordapp.net/' . str_replace('mp:', '', $smallImages[$i]) . '" data-tippy-content="' . $smallTexts[$i] . '">';
+                    $smallImages[$i] = '<img alt="activity" class="w-[30px]  rounded-full absolute -bottom-1 -right-1" src="https://media.discordapp.net/' . str_replace('mp:', '', $smallImages[$i]) . '" data-tippy-content="' . $smallTexts[$i] . '">';
                 } else {
-                    $smallImages[$i] = '<img class="w-[30px] rounded-full absolute -bottom-1 -right-1" src="https://cdn.discordapp.com/app-assets/383226320970055681/' . $smallImages[$i] . '" data-tippy-content="' . $smallTexts[$i] . '">';
+                    $smallImages[$i] = '<img alt="activity" class="w-[30px] rounded-full absolute -bottom-1 -right-1" src="https://cdn.discordapp.com/app-assets/383226320970055681/' . $smallImages[$i] . '" data-tippy-content="' . $smallTexts[$i] . '">';
                 }
             }
 
@@ -237,7 +237,7 @@ class DiscordApi
                 $output .= <<<EOL
                 <div class="py-3 sm:px-2 px-1 text-base text-white border-[1px] border-discord-200 rounded-[4px] max-w-[125px] sm:max-w-[265px]">
                     <div class="flex items-center sm:gap-2 gap-1">
-                        <img src="assets/media/accounts/$accountName.svg" class="user-service-icon w-6 float-left mr-1" data-tippy-content="$accountName">
+                        <img alt="$accountName" src="assets/media/accounts/$accountName.svg" class="user-service-icon w-6 float-left mr-1" data-tippy-content="$accountName">
                         <div class="flex items-center grow">
                             <div class="flex items-center flex-1 ">
                                 <div class="user-service-name sm:text-base text-xs">

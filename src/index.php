@@ -66,28 +66,28 @@ $DiscordApi = new DiscordApi();
                 <header class="sm:mb-[60px] mb-10  sm:min-w-[600px]  w-80  ">
                     <div id="user-banner" class=" min-h-14 sm:min-h-28 rounded-t-lg bg-center bg-cover bg-no-repeat" <?php echo strlen($DiscordApi->banner()) <= 7 ? 'style="background-color: ' . $DiscordApi->banner() . '"' : null; ?>>
                         <?php
-                        echo strlen($DiscordApi->banner()) > 7 ? '<img src="' . $DiscordApi->banner() . '" class="w-full h-[130px] sm:h-[210px] object-cover rounded-t-lg" />' : null;
+                        echo strlen($DiscordApi->banner()) > 7 ? '<img alt="banner" src="' . $DiscordApi->banner() . '" class="w-full h-[130px] sm:h-[210px] object-cover rounded-t-lg" />' : null;
                         ?>
                     </div>
                     <div class="relative">
                         <div class="relative left-[11px] top-[-46px] sm:left-[22px] sm:top-[-68px]">
                             <!-- user avatar -->
-                            <img id="user-avatar" src="<?php echo $DiscordApi->avatar(); ?>" class="absolute rounded-full border-[3px] sm:border-[6px] border-discord-200 w-[86px] sm:w-32" crossorigin="anonymous" <?php echo $DiscordApi->getUserResource('basic')['accentColor'] == null ? 'onload="getDominantColor(this)"' : ''; ?>>
+                            <img alt="avatar" id="user-avatar" src="<?php echo $DiscordApi->avatar(); ?>" class="absolute rounded-full border-[3px] sm:border-[6px] border-discord-200 w-[86px] sm:w-32" crossorigin="anonymous" <?php echo $DiscordApi->getUserResource('basic')['accentColor'] == null ? 'onload="getDominantColor(this)"' : ''; ?>>
                             <!-- user avatar decoration -->
                             <img id="user-avatar-decoration" src="<?php ?>" class=" absolute top-[-2px] left-[-2px] w-[68px]  sm:top-[-4px] sm:left-[-4px] sm:w-[136px]">
                             <img id="user-avatar-decoration" src="<?php ?>" class=" absolute top-[-2px] left-[-2px] w-[68px]  sm:top-[-4px] sm:left-[-4px] sm:w-[136px]">
                             <!-- user status -->
                             <div class="relative">
-                                <img src="assets/media/statuses/<?php echo $DiscordApi->clientStatus(); ?>.svg" id="user-status" data-tippy-content=<?php
-                                                                                                                                                    $statuses = [
-                                                                                                                                                        "online" => "Online",
-                                                                                                                                                        "idle" => "Idle",
-                                                                                                                                                        "dnd" => "Do not disturb",
-                                                                                                                                                        "offline" => "Offline"
-                                                                                                                                                    ];
+                                <img alt="status" src="assets/media/statuses/<?php echo $DiscordApi->clientStatus(); ?>.svg" id="user-status" data-tippy-content=<?php
+                                                                                                                                                                    $statuses = [
+                                                                                                                                                                        "online" => "Online",
+                                                                                                                                                                        "idle" => "Idle",
+                                                                                                                                                                        "dnd" => "Do not disturb",
+                                                                                                                                                                        "offline" => "Offline"
+                                                                                                                                                                    ];
 
-                                                                                                                                                    echo '"' . $statuses[$DiscordApi->clientStatus()] . '"';
-                                                                                                                                                    ?> class="absolute left-[45px] top-[50px] sm:left-[78px] sm:top-[84px] scale-75 sm:scale-100">
+                                                                                                                                                                    echo '"' . $statuses[$DiscordApi->clientStatus()] . '"';
+                                                                                                                                                                    ?> class="absolute left-[45px] top-[50px] sm:left-[78px] sm:top-[84px] scale-75 sm:scale-100">
                             </div>
                             <div class="hidden absolute z-50  break-words rounded-lg bg-discord-300 py-1.5 px-3 font-sans text-sm font-normal text-white after:content-[''] after:absolute after:ml-[-5px] after:border-[5px] after:border-solid after:border-[black_transparent_transparent_transparent] after:left-2/4 after:top-full">
 
