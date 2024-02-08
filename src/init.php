@@ -156,6 +156,8 @@ class DiscordApi
             5 => "Competing"
         ];
 
+        if ($names == null) return;
+
         for ($i = 0; $i < count($names); $i++) {
             if ($largeImages[$i] == null) {
                 $largeImages[$i] = '<div></div>';
